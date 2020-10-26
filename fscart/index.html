@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - New modal cart </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="fastspring">
+		<h1>Change Language <span data-fsc-order-language></span></h1>
+		<a class="fastspring_btn-sm fastspring_btn-primary" onclick="fastspring.builder.language('en');">Change to EN</a>
+		<a class="fastspring_btn-sm fastspring_btn-primary" onclick="fastspring.builder.language('da');">Change to DA</a>
+		<a class="fastspring_btn-sm fastspring_btn-primary" onclick="fastspring.builder.language('de');">Change to DE</a>
+		<a class="fastspring_btn-sm fastspring_btn-primary" onclick="fastspring.builder.language('es');">Change to ES</a>
+		<a class="fastspring_btn-sm fastspring_btn-primary" onclick="fastspring.builder.language('fi');">Change to FI</a>
+		<a class="fastspring_btn-sm fastspring_btn-primary" onclick="fastspring.builder.language('fr');">Change to FR</a>
+		<a class="fastspring_btn-sm fastspring_btn-primary" onclick="fastspring.builder.language('hr');">Change to HR</a>
+		<a class="fastspring_btn-sm fastspring_btn-primary" onclick="fastspring.builder.language('it');">Change to IT</a><br /><br />
+		<a class="fastspring_btn-sm fastspring_btn-primary" onclick="fastspring.builder.language('ja');">Change to JA</a>
+		<a class="fastspring_btn-sm fastspring_btn-primary" onclick="fastspring.builder.language('ko');">Change to KO</a>
+		<a class="fastspring_btn-sm fastspring_btn-primary" onclick="fastspring.builder.language('nl');">Change to NL</a>
+		<a class="fastspring_btn-sm fastspring_btn-primary" onclick="fastspring.builder.language('no');">Change to NO</a>
+		<a class="fastspring_btn-sm fastspring_btn-primary" onclick="fastspring.builder.language('pt');">Change to PT</a>
+		<a class="fastspring_btn-sm fastspring_btn-primary" onclick="fastspring.builder.language('ru');">Change to RU</a>
+		<a class="fastspring_btn-sm fastspring_btn-primary" onclick="fastspring.builder.language('sv');">Change to SV</a>
+		<a class="fastspring_btn-sm fastspring_btn-primary" onclick="fastspring.builder.language('zh');">Change to ZH</a>
+		<!--
+		Example buttons to populate the shopping cart.
+		-->
+		<h1>
+			Open Cart Buttons
+		</h1>
+		<a class="fastspring_btn-sm fastspring_btn-danger" data-fsc-opencart="modal">Open modal cart</a>
+		<a class="fastspring_btn-sm fastspring_btn-danger" data-fsc-opencart="modalsmall">Open small modal cart</a><br /><br />
+		<a class="fastspring_btn-sm fastspring_btn-danger" data-fsc-opencart="left">Open left cart</a>
+		<a class="fastspring_btn-sm fastspring_btn-danger" data-fsc-opencart="right">Open right cart</a>
+		<a class="fastspring_btn-sm fastspring_btn-danger" data-fsc-opencart="bottom">Open bottom cart</a><br /><br />
+		<a class="fastspring_btn-sm fastspring_btn-danger" data-fsc-opencart="topleft">Open Mini Cart Top Left</a>
+		<a class="fastspring_btn-sm fastspring_btn-danger" data-fsc-opencart="topright">Open Mini Cart Top Right</a>
+		<a class="fastspring_btn-sm fastspring_btn-danger" data-fsc-opencart="bottomright">Open Mini Cart Bottom Right</a>
+		<a class="fastspring_btn-sm fastspring_btn-danger" data-fsc-opencart="bottomleft">Open Mini Cart Bottom Left</a><br /><br />
+		<a class="fastspring_btn-sm fastspring_btn-danger" data-fsc-opencart="standalone">Stand Alone Cart Page (if defined)</a><br /><br />
+		<a class="fastspring_btn-sm fastspring_btn-danger" data-fsc-opencart="popupcart">Open Popup Cart</a>
+		<a class="fastspring_btn-sm fastspring_btn-danger" data-fsc-opencart="none">Open Checkout</a>
+				
+		<h1>
+			Add to cart buttons Modal Cart
+		</h1>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="base" data-fsc-cart="modal">Buy The Photo.io App</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="xsell" data-fsc-cart="modal">Buy The Photo.io App with Cross-Sell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="upsell" data-fsc-cart="modal">Buy The Photo.io App with Upsell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="sub" data-fsc-cart="modal">Buy The Photo.io App Subscription</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="bogus" data-fsc-cart="modal">Buy Bogus Product To Trigger Error</button>
+		<h1>
+			Add to cart buttons Small Modal Cart
+		</h1>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="base" data-fsc-cart="modalsmall">Buy The Photo.io App</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="xsell" data-fsc-cart="modalsmall">Buy The Photo.io App with Cross-Sell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="upsell" data-fsc-cart="modalsmall">Buy The Photo.io App with Upsell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="sub" data-fsc-cart="modalsmall">Buy The Photo.io App Subscription</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="bogus" data-fsc-cart="modalsmall">Buy Bogus Product To Trigger Error</button>		
+		
+		<h1>
+			Add to cart buttons Left Sheet Cart
+		</h1>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="base" data-fsc-cart="left">Buy The Photo.io App</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="xsell" data-fsc-cart="left">Buy The Photo.io App with Cross-Sell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="upsell" data-fsc-cart="left">Buy The Photo.io App with Upsell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="sub" data-fsc-cart="left">Buy The Photo.io App Subscription</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="bogus" data-fsc-cart="left">Buy Bogus Product To Trigger Error</button>		
+		
+		<h1>
+			Add to cart buttons Right Sheet Cart
+		</h1>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="base" data-fsc-cart="right">Buy The Photo.io App</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="xsell" data-fsc-cart="right">Buy The Photo.io App with Cross-Sell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="upsell" data-fsc-cart="right">Buy The Photo.io App with Upsell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="sub" data-fsc-cart="right">Buy The Photo.io App Subscription</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="bogus" data-fsc-cart="right">Buy Bogus Product To Trigger Error</button>		
+		
+		<h1>
+			Add to cart buttons Bottom Sheet Cart
+		</h1>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="base" data-fsc-cart="bottom">Buy The Photo.io App</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="xsell" data-fsc-cart="bottom">Buy The Photo.io App with Cross-Sell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="upsell" data-fsc-cart="bottom">Buy The Photo.io App with Upsell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="sub" data-fsc-cart="bottom">Buy The Photo.io App Subscription</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="bogus" data-fsc-cart="bottom">Buy Bogus Product To Trigger Error</button>		
+						
+		<br /><br />
+		
+		
+		<h1>
+			Add to cart buttons MINI Cart Top Left
+		</h1>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="base" data-fsc-cart="topleft">Buy The Photo.io App</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="xsell" data-fsc-cart="topleft">Buy The Photo.io App with Cross-Sell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="upsell" data-fsc-cart="topleft">Buy The Photo.io App with Upsell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="sub" data-fsc-cart="topleft">Buy The Photo.io App Subscription</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="bogus" data-fsc-cart="topleft">Buy Bogus Product To Trigger Error</button>		
+						
+		<br /><br />
+		
+		
+		<h1>
+			Add to cart buttons MINI Cart Top Right
+		</h1>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="base" data-fsc-cart="topright">Buy The Photo.io App</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="xsell" data-fsc-cart="topright">Buy The Photo.io App with Cross-Sell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="upsell" data-fsc-cart="topright">Buy The Photo.io App with Upsell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="sub" data-fsc-cart="topright">Buy The Photo.io App Subscription</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="bogus" data-fsc-cart="topright">Buy Bogus Product To Trigger Error</button>		
+						
+		<br /><br />
+		
+		
+		<h1>
+			Add to cart buttons MINI Cart Bottom Right
+		</h1>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="base" data-fsc-cart="bottomright">Buy The Photo.io App</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="xsell" data-fsc-cart="bottomright">Buy The Photo.io App with Cross-Sell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="upsell" data-fsc-cart="bottomright">Buy The Photo.io App with Upsell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="sub" data-fsc-cart="bottomright">Buy The Photo.io App Subscription</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="bogus" data-fsc-cart="bottomright">Buy Bogus Product To Trigger Error</button>		
+						
+		<br /><br />
+		
+		
+		<h1>
+			Add to cart buttons MINI Cart Bottom Left
+		</h1>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="base" data-fsc-cart="bottomleft">Buy The Photo.io App</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="xsell" data-fsc-cart="bottomleft">Buy The Photo.io App with Cross-Sell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="upsell" data-fsc-cart="bottomleft">Buy The Photo.io App with Upsell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="sub" data-fsc-cart="bottomleft">Buy The Photo.io App Subscription</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="bogus" data-fsc-cart="bottomleft">Buy Bogus Product To Trigger Error</button>		
+						
+		<br /><br />
+		
+		<h1>
+			Add to cart buttons Stand Alone Cart
+		</h1>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="base" data-fsc-cart="standalone">Buy The Photo.io App</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="xsell" data-fsc-cart="standalone">Buy The Photo.io App with Cross-Sell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="upsell" data-fsc-cart="standalone">Buy The Photo.io App with Upsell</button>
+		<button class="fastspring_btn-sm fastspring_btn-success" data-fsc-addthis="sub" data-fsc-cart="standalone">Buy The Photo.io App Subscription</button>
+		
+		<br /><br /><br />
+	
+	
+	<script
+			id="fsc-api"
+			src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.8.3/fastspring-builder.min.js"
+			type="text/javascript"
+			defer="true"
+			data-storefront="fastspringexamples.test.onfastspring.com/popup-fastspringexamples"
+			>
+		</script>
+		<script>
+			/*
+			Config section here:
+			*/
+							
+			fastspring_options = {
+				enableTranslations: true,
+				loadFA: true, /* Should fontawesome be loaded. Default: true*/
+				enableGA: false, /*Should Google Analytics linker be enabled? Warning: if GA is not included on the page and this is enabled, this will break checkout. Default: false*/
+				enableCart: true, /*Should the templates for the cart be included on the page? Default: true*/
+				cartType:"modal", /*options: modal, modalsmall, left, right, bottom, topleft, topright, bottomright, bottomleft, popupcart, none. none will redirect to checkout. Default: modal*/
+				standAloneCartPage:"https://furiousfalcon.com/hbs/cart.html", /*Full URL of your cart page if defined*/
+				showPromo:true, /*Should the promo / coupon code field be displayed on the cart? Default: true*/
+				applyCouponButtonClass:"fastspring_btn fastspring_btn-success", /*Default: fastspring_btn fastspring_btn-success*/
+				checkoutButtonClass:"fastspring_btn fastspring_btn-success", /*Default: fastspring_btn fastspring_btn-success*/
+				crossSellButtonClass:"fastspring_btn fastspring_btn-success", /*Default: fastspring_btn fastspring_btn-success*/
+				upSellButtonClass:"fastspring_btn fastspring_btn-success", /*Default: fastspring_btn fastspring_btn-success*/
+				edsButtonClass:"fastspring_btn fastspring_btn-success", /*Default: fastspring_btn fastspring_btn-success*/
+				removeIcon: "trash", /*options: none, times, timescircle, trash, trashalt, minus, minuscircle. none will use the text Remove. Default: none*/
+				applyCouponButtonIcon:"chevron", /*options: chevron, chevroncircle, arrow, arrowcircle. Default: none*/
+				checkoutButtonIcon:"cart", /*options: chevron, chevroncircle, arrow, arrowcircle, basket, cart, cartplus, plus, pluscircle, lock. Default: none */
+				crossSellButtonIcon:"cartplus", /*options: chevron, chevroncircle, arrow, arrowcircle, basket, cart, cartplus, plus, pluscircle. Default: none */
+				upSellButtonIcon:"lock", /*options: chevron, chevroncircle, arrow, arrowcircle, basket, cart, cartplus, plus, pluscircle. Default: none */
+				edsButtonIcon:"plus", /*options: chevron, chevroncircle, arrow, arrowcircle, basket, cart, cartplus, plus, pluscircle. Default: none */
+				enableMiniCart:true, /*default: true*/
+				miniCartLocation: "bottomleft", /*options: topleft, topright, bottomright, bottomleft. Default: bottomright*/
+				miniCartIcon: "cart", /*options: chevron, chevroncircle, arrow, arrowcircle, basket, cart, cartplus, plus, pluscircle, lock. Default: cart*/
+				miniCartBubbleColor: "#ff0000", /*Default: #ff0000*/
+				cartHeaderBGColor: "#ff0000", /*Default: #28a745 */
+				cartHeaderTextColor: "#fff", /*Default: #ffffff */
+				popupClosedRedirectURL: "http://jon2s.com", /*full URL to redirect to*/
+				popupClosedRedirectParameter: "order", /*query string parameter for redirect URL that will include the order reference. i.e. ?order=ABC123456789*/
+				miniCartCheckoutBGColor: "#8224e3",
+				miniCartCheckoutBGColorHover:"#5a00bb",
+				miniCartCheckoutTextColor:"#c1c1c1",
+				miniCartCheckoutTextColorHover:"#c1c1c1"
+			};
+		</script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
